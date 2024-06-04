@@ -26,6 +26,7 @@ body{
     flex-direction: row;
     width: 100%;
     height: 20%;
+    flex-wrap: wrap;
 }
 
 .Nav{
@@ -43,15 +44,11 @@ body{
     margin-top: 0.5%;
     }
     .Nav-img{
-
-       aspect-ratio: auto; 
-      object-fit: cover;
-      
-        
+    aspect-ratio: auto; 
+    object-fit: cover;   
     }
     
     .Nav--navbar{
-    
     width: 80%;
     height: 100%;
     margin-left: 5%;
@@ -60,41 +57,34 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    
-    
     margin-top: 0.5%;
-   
-    
-    
     }
     
     .Nav-a{
-        display: flex;
-        font-size: small;
-        font-weight: bold;
-        text-decoration: none;
-        color: black;
+    display: flex;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
     }
 
-
-
-
-    
+  
 .Main{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-bottom: 4%;
-    
+    padding-bottom: 10x;
     gap:3%;
+    
     }
 
 .Main-p{
-    
+    max-width: 100%;
+    min-width: 50%;
     margin-top: 2%;
     margin-left: 3%;
     margin-bottom: 3%;
-    font-size: 18px;
+    font-size: 1.2em;
         
     }
 
@@ -106,8 +96,8 @@ body{
     align-items: center;
     margin-top: 2%;
     text-decoration: none;
-    
     color: black;
+    margin-bottom: 40px;
 
     }
 
@@ -133,38 +123,49 @@ body{
      width: 100%;  
 }
 
+.Main--base{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0 10px;
+    
+    
+}
 
+.Main--linea{
+    width: 95%;
+    height: 0;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    border-bottom: solid 2px black;
+    
+    
+}
+
+.Main-img{
+    aspect-ratio: auto;
+    width: 2%;
+}
 
 .Footer{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 10%; 
-    justify-content: center;
-    
-    
+    height: 20%;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px 20px;
+    margin-top: 10px;
     }
 
-.Footer--caja{
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 95%;
-    height: 10%;
-    border-top: 1px solid;
-    border-color: black;
-}
 
-.Footer--pie{
-    
-    padding-top: 10px;
+
+.Footer-p{
+    max-width: 40%;
     display: flex;
-    flex-direction: column;
-    
-    
-    
-    flex-wrap: wrap;
-    margin-left: 1%;
+    align-items: center;
     font-size: small;   
     }
     
@@ -173,23 +174,16 @@ body{
     
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
+    max-width: 60%;
     align-content: center;
-    padding-bottom: 2%;;
     
-    gap: 1%;
-    margin-right: 0.5%;
+    gap: 2%;
+   }
+        
+.Footer-a{
     
-        
-        }
-        
-.Footer-div{
-    display: flex;
-    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
     padding: 0%;
-    
     font-size: small;
-        
-
-        }
+}
